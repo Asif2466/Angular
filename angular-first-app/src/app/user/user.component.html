@@ -1,0 +1,9 @@
+<!-- <p>user works!</p> -->
+
+<div>
+    <button [class.active]="selected" (click)="onSelectUser()"> <!-- Event Binding -->
+        <!-- <img [src]="'assets/users/'+selectedUser.avatar" alt="selectedUser.name"/> -->
+         <img [src]="imagePath()" [alt]="user.name"/><!--  Property Bindng which is a type of One-Way Binding-->
+         <span>{{ user.name }}</span> <!-- If we reading a signal, that property should be called as a function -->
+    </button>
+</div>
